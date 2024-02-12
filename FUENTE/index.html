@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="estilos/globals.css" />
+    <link rel="stylesheet" href="estilos/style.css" />
+    <script src="js/script.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+        <img class="logotype" src="img/logotype.png" />
+        <button class="manga-button text">Manga</button>
+        <button class="anime-button text">Anime</button>
+        <nav class="search-bar">
+            <img class="rectangle" src="img/rectangle-6.png"/>
+            <input class="input" type="text" placeholder="Search...">
+        </nav>
+        <button class="login-button text">Login</button>
+        <button class="sign-up-button text">Sign Up</button>
+        
+    </header>
+    <section class="cuerpo">
+      <article class="contenedor-carrousel">
+        <article class="carrousel">
+          <div id="img0" class="carrousel-slide">
+            <img src="img/tate-recort.jpg">
+          </div>
+          <div id="img1" class="carrousel-slide ocultacion">
+            <img src="img/elite-recort.jpg">
+          </div>
+          <div id="img2" class="carrousel-slide ocultacion">
+            <img src="img/jujus-recort.jpg">
+          </div>
+          <div id="img3" class="carrousel-slide ocultacion">
+            <img src="img/momochi-recort.jpg">
+          </div>
+          <div id="img4" class="carrousel-slide ocultacion">
+            <img src="img/tales-recort.jpg">
+          </div>
+          <div id="img5" class="carrousel-slide ocultacion">
+            <img src="img/solo-recort.jpg">
+          </div>
+        </article>
+      </article>
+        <article class="anime">
+          <h1 class="titulo-anime">Anime</h1>
+          <aside class="frame">
+            <article class="carrousel-titulo">
+              <div id="titu0" class="center">
+                <img src="img/tate-titulo.png">
+              </div>
+              <div id="titu1" class="ocultacion">
+                <img src="img/elite-titulo.png">
+              </div>
+              <div id="titu2" class="ocultacion">
+                <img src="img/jujus-titulo.png">
+              </div>
+              <div id="titu3" class="ocultacion">
+                <img src="img/momochi-titulo.png">
+              </div>
+              <div id="titu4" class="ocultacion">
+                <img src="img/tales-titulo.png">
+              </div>
+              <div id="titu5" class="ocultacion">
+                <img src="img/solo-titulo.png">
+              </div>
+            </article>
+            <div class="descripciones">
+              <p id="desc0" class="description">
+                Iwatani Naofumi es el típico otaku, al menos hasta que un día encuentra en la biblioteca un libro que lo
+                transporta a otro mundo. Allí se convertirá en el Héroe del Escudo, uno de los Cuatro Héroes Cardinales, y
+                tendrá que luchar contra las Olas de la Catástrofe junto a los héroes de la espada, la lanza y el arco...
+              </p>
+              <p id="desc1" class="ocultacion">
+                Kiyotaka Ayanokouji acaba de entrar en la Academia Tokyo Koudo Ikusei, de la 
+                cual se dice que el 100% de sus estudiantes acaban yendo a la 
+                universidad o encontrando un buen trabajo. Sin embargo nuestro 
+                protagonista acaba en la Clase 1-D, donde la escuela pone a todos los 
+                alumnos con problemas. Y lo que es más, cada mes la escuela otorga a los
+                estudiantes puntos por valor de 100.000 yenes, y las clases emplean un 
+                sistema por el cual se puede hablar, dormir e incluso molestar a los 
+                compañeros durante las clases.
+              </p>
+              <p id="desc2" class="ocultacion">
+                Dificultades, arrepentimiento, vergüenza… Los sentimientos negativos de los humanos 
+                se convierten en Maldiciones que nos acechan en nuestra vida diaria. Las
+                Maldiciones campan a sus anchas por todo el mundo, y pueden llevar a 
+                las personas a sufrir terribles desgracias e incluso dirigirlas a su 
+                muerte. Y lo que es peor: solo una Maldición puede exorcizar otra 
+                Maldición.
+              </p>
+              <p id="desc3" class="ocultacion">
+                El decimosexto cumpleaños de Himari será inolvidable para ella. 
+                Inesperadamente, recibe un testamento donde le dejan en herencia
+                una misteriosa casa: la Casa Momochi. Al llegar allí descubre que dicha 
+                casa estaba construida en el límite entre el mundo
+                humano y el reino espiritual. Allí conoce a Yukari, Ise y un peculiar 
+                chico llamado Aoi que parece esconder un secreto.
+              </p>
+              <p id="desc4" class="ocultacion">
+                Sato es un chico de secundaria enamorado de su mejor amiga, Hime, una chica 
+                preciosa que procede de otro mundo. Cuando ella regresa a su mundo natal
+                para casarse, no se lo piensa dos veces: la sigue y echa por tierra la 
+                boda. Cuando Hime le besa, Sato se convierte en el nuevo nuevo, pero lo 
+                que él no sabía es que Hime es una de las Princesas de los Anillos y su 
+                esposo está destinado a ser el Rey del Anillo, un héroe con un poder 
+                inmenso.
+              </p>
+              <p id="desc5" class="ocultacion">
+                Lo que no te mata te hace más fuerte, pero en el caso de Sung Jinwoo, lo que lo mató lo hizo más fuerte. 
+                Después de ser brutalmente asesinado por monstruos en una mazmorra de alto rango, Jinwoo regresó con el Sistema, 
+                un programa que solo él puede ver y que eleva su nivel en todos los sentidos.
+              </p>
+            </div>
+            <div class="caja-comenzar">
+              <img class="img-play" src="img/polygon-1.svg">
+              <button class="texto-comenzar">COMENZAR A VER</button>
+            </div>
+            <article class="botones">
+                <button id="anime-button-0" class="boton-pink" onclick="goToSlide(0)"></button>
+                <button id="anime-button-1" class="boton" onclick="goToSlide(1)"></button>
+                <button id="anime-button-2" class="boton" onclick="goToSlide(2)"></button>
+                <button id="anime-button-3" class="boton" onclick="goToSlide(3)"></button>
+                <button id="anime-button-4" class="boton" onclick="goToSlide(4)"></button>
+                <button id="anime-button-5" class="boton" onclick="goToSlide(5)"></button>
+            </article>
+          </aside>
+          
+        </article>
+        <section class="seccion-manga">
+          <h1 class="manga">Manga</h1>
+          <article class="frame-manga">
+            <aside class="carrousel-manga">
+              <img class="imagen-manga" src="img/rectangle-8.png"/>
+            </aside>
+            <article class="textos">
+              <article class="titulos-manga">
+                <p class="titulo-manga">Ushiro no Seki no Gyaru ni Sukarete Shimatta. - Mou Ore wa Damekamoshirenai</p>
+              </article>
+              <article class="descs-manga">
+                <p class="desc-manga">
+                  ¿Mi vida escolar ha cambiado drásticamente solo porque le gusto y apenas hablo?<br />Yuizaki Shino, una
+                  de las chicas más bellas de la escuela, es compañera de clase de Fujiwara Sandai sentada detrás de él.
+                  Fue sólo por capricho que Sandai la ayudó a pesar de pasar sus días estudiando y no tener un solo amigo.
+                  Se supone que iba a ser-<br />&#34;¡No podía esperar a que saliera de la escuela!... Oye, ¿espera un
+                  minuto?&#34;<br />Ese día y momento llevaron a Sandai a empezar a salir con Shino. Pasan tiempo juntos
+                  después de la escuela, se mantienen al día con los pasatiempos del otro y se quedan a dormir con
+                  frecuencia... Ella es amable y dulce y siempre se aferra a él. Y de alguna manera, los otros compañeros
+                  de clase comenzaron a prestarle atención a Sandai, poco a poco cambiaron su estilo de apariencia y hubo
+                  muchas conversaciones alrededor de su cinturón. Está más inquieto que cuando Sandai estaba solo antes.
+                  ....Bueno, este tipo de vida escolar no es tan mala, ¿verdad?
+                </p>
+              </article>
+              <article class="bottom">
+                <article class="autores-manga">
+                  <p class="autor">Michinoku Koharu, Suya Maromi</p>
+                </article>
+                <article class="botones-manga">
+                  <button id="0" class="boton-pink" onclick="goToSlide(0)"></button>
+                  <button id="1" class="boton" onclick="goToSlide(1)"></button>
+                  <button id="2" class="boton" onclick="goToSlide(2)"></button>
+                  <button id="3" class="boton" onclick="goToSlide(3)"></button>
+                  <button id="4" class="boton" onclick="goToSlide(4)"></button>
+                  <button id="5" class="boton" onclick="goToSlide(5)"></button>
+                </article>
+              </article>
+            </article>
+          </article>
+        </section>
+    </section>
