@@ -1,0 +1,386 @@
+html, body{
+  margin: 0px;
+  height: 100%;
+}
+
+body {
+  background-color: #fcfafa;
+  width: 100%;
+}
+
+.text {
+  height: 21px;
+  top: 8px;
+  font-family: "Lato", Helvetica;
+  font-weight: 900;
+  color: #fcfafa;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 20.8px;
+  white-space: nowrap;
+  left: 32px;
+}
+
+.header {
+  width: 100%;
+  height: 7.50%;
+  background-color: #3b3b3b;
+  
+  display: grid;
+  grid-template-columns: 200px 150px 150px auto 295px 100px 150px;
+  align-items: center;
+  grid-area: auto;
+}
+
+.logotype {
+  width: 168px;
+  height: 43px;
+  margin-left: 45px;
+  grid-column-start: 1;
+  grid-column-end: 1;
+}
+
+.manga-button {
+  border: solid 0px black;
+  width: 80%;
+  height: 55%;
+  
+  background-color: #eccacb;
+  border-radius: 8px;
+  box-shadow: 4px -4px 4px 0px rgba(0,0,0,0.35);
+  margin-left: 45px;
+  grid-column: 2;
+}
+
+.anime-button {
+  border: solid 0px black;
+  width: 80%;
+  height: 55%;
+  
+  background-color: #eccacb;
+  border-radius: 8px;
+  box-shadow: 4px -4px 4px 0px rgba(0,0,0,0.35);
+  margin-left: 45px;
+  grid-column: 3;
+}
+
+.search-bar {
+  grid-column: 5;
+  width: 279px;
+  height: 40px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  border: 1px solid;
+  border-color: #c2c2c2;
+}
+
+.input {
+  position: absolute;
+  border: solid 0px;
+  font-family: "Lato", Helvetica;
+  font-weight: 900;
+  color: #3b3b3b;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 20.8px;
+  padding: 8px 8px 8px 8px;
+}
+
+input::placeholder {
+  text-align: center; 
+}
+
+.rectangle {
+  margin-top: 6px;
+  margin-left: 6px;
+  width: 10%;
+  height: 70%;
+}
+
+.login-button {
+  border: solid 0px black;
+  width: 80%;
+  height: 55%;
+  background-color: #3b3b3b;
+  border-radius: 4px;
+  grid-column: 6;
+}
+
+.sign-up-button {
+  border: solid 0px black;
+  margin-right: 45px;
+  width: 80%;
+  height: 55%;
+  background-color: #eccacb;
+  border-radius: 4px;
+  box-shadow: 8px -8px 4px #00000040;
+  grid-column: 7;
+}
+
+.cuerpo {
+  display: flex;
+  flex-direction: column;
+}
+
+.contenedor-carrousel {
+  width: 100%;
+  height: auto;
+  position: relative;
+  z-index: -1;
+}
+
+.carrousel {
+  display: flex;
+  transition: all 600ms;
+  max-height: 100%;
+}
+
+.carrousel-slide {
+  display: flex;
+  width: 100%;
+}
+
+.carrousel img {
+  width: 100%;
+  height: auto;
+}
+
+.anime {
+  display: flex;
+  flex-direction: column;
+  
+  position: absolute;
+  z-index: 0;
+}
+
+.titulo-anime {
+  margin-top: 3%;
+  margin-left: 5%;
+
+  font-family: "Arvo", Helvetica;
+  font-weight: 400;
+  color: #ececece6;
+  font-size: 58px;
+  letter-spacing: -0.5px;
+  line-height: 35px;
+}
+
+.frame {
+  width: 36%;
+  border-radius: 39px;
+  background: linear-gradient(180deg, rgb(236, 236, 236) 50%, rgba(236, 236, 236, 0) 100%);
+  margin-left: 3%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.carrousel-titulo {
+  width: auto;
+  display: flex;
+}
+
+
+.carrousel-titulo img {
+  width: 75%;
+}
+
+.center{
+  display: flex;
+  justify-content: center;
+  padding-top: 6%;
+  padding-bottom: 6%;
+  width: 100%;
+
+  flex-shrink: 0;
+}
+
+.ocultacion {
+  display: none;
+}
+
+.descripciones {
+  width: 84%;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 6%;
+}
+
+.description  {
+  font-family: "Lato", Helvetica;
+  font-weight: 400;
+  color: #3b3b3b;
+  font-size: 18px;
+  letter-spacing: -0.16px;
+  line-height: 25.6px;
+}
+
+.caja-comenzar {
+  width: 90%;
+  height: 4%;
+  background-color: #eccacb;
+  border-radius: 12px;
+  overflow: hidden;
+
+  display: flex;
+  justify-content: center;
+}
+
+.texto-comenzar {
+  font-family: "Lato", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 16px;
+  letter-spacing: -0.16px;
+  line-height: 25.6px;
+  white-space: nowrap;
+  background-color: #eccacb;
+  border: solid 0px;
+
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+.img-play {
+  display: flex;
+  justify-self: flex-end;
+}
+
+.botones {
+  justify-self: start;
+  width: 85%;
+  align-items: end;
+  margin-top: 4%;
+  margin-bottom: 5%;
+}
+
+.boton {
+  border: solid 0px;
+  width: 16px;
+  height: 8px;
+  background-color: #ececec;
+  border-radius: 14.5px;
+  margin-right: 1%;
+}
+
+.boton-pink {
+  border: solid 0px;
+  height: 8px;
+  width: 44px;
+  background-color: #eccacb;
+  border-radius: 14.5px;
+  margin-right: 1%;
+}
+
+.seccion-manga {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.manga {
+  align-self: flex-start;
+  margin-top: 3%;
+  margin-left: 5%;
+
+  font-family: "Arvo", Helvetica;
+  font-weight: 400;
+  color: #3b3b3b;
+  font-size: 58px;
+  letter-spacing: -0.5px;
+  line-height: 40px;
+}
+
+.frame-manga {
+  width: 95%;
+  background-color: #3b3b3b;
+  border-radius: 39px;
+
+  display: flex;
+}
+
+.carrousel-manga {
+  width: 28%;
+  margin: 2.5% 2.5% 2.5% 2.5%;
+}
+
+.carrousel-manga img {
+  width: 100%;
+}
+
+.imagen-manga {
+  object-fit: cover;
+}
+
+.textos {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.titulo-manga {
+  margin-top: 2.5%;
+  margin-right: 2.5%;
+
+  font-family: "Arvo", Helvetica;
+  font-weight: 700;
+  color: #fcfafa;
+  font-size: 36px;
+  letter-spacing: -0.36px;
+  line-height: 57.6px;
+}
+
+.desc-manga {
+  margin-right: 5%;
+
+  font-family: "Lato", Helvetica;
+  font-weight: 400;
+  color: #fcfafa;
+  font-size: 16px;
+  letter-spacing: -0.16px;
+  line-height: 25.6px;
+}
+
+.bottom {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: end;
+  margin-bottom: 3.5%;
+}
+
+.autores-manga {
+  font-family: "Lato", Helvetica;
+  font-weight: 400;
+  color: #fcfafa;
+  font-size: 16px;
+  letter-spacing: -0.16px;
+  line-height: 25.6px;
+  margin-bottom: 1%;
+}
+
+.botones-manga {
+  display: flex;
+  width: 85%;
+}
+
+@media screen and (max-width: 1340px) {
+  .desc-manga {
+    display: none;
+  }
+  
+  .description {
+    display: none;
+  }
+  /*
+  .frame {
+    width: 58%;
+    margin-left: 4.5%;
+  }
+  */
+}
